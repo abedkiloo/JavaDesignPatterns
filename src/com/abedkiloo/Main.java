@@ -8,5 +8,12 @@ public class Main {
         account.deposit(100);
         account.withdraw(10);
         System.out.println(account.getBalance());
+
+        drawUI(new CheckBox());
+        drawUI(new Button());
+    }
+
+    public static void drawUI(UIControl uiControl) {
+        uiControl.draw();
     }
 }
